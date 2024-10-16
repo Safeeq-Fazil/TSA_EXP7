@@ -10,13 +10,17 @@
 To Implemented an Auto Regressive Model using Python for the vegetable dataset.
 
 ### ALGORITHM:
-1. Import necessary libraries
-2. Read the CSV file into a DataFrame
-3. Perform Augmented Dickey-Fuller test
-4. Split the data into training and testing sets.Fit an AutoRegressive (AR) model with 13 lags
-5. Plot Partial Autocorrelation Function (PACF) and Autocorrelation Function (ACF)
-6. Make predictions using the AR model.Compare the predictions with the test data
-7. Calculate Mean Squared Error (MSE).Plot the test data and predictions.
+
+1.Load the dataset, convert 'Date' to datetime, filter for the commodity, resample to monthly averages, and handle missing values.
+
+2.Plot ACF and PACF to identify the appropriate lag order for the AR model.
+
+3.Fit the AR model using the training data with the selected lag order based on PACF.
+
+4.Predict the last 12 months, calculate MSE, and plot the actual test data against the predicted values.
+
+5.Forecast the next 12 months beyond the test period and visualize the final predictions along with the training data.
+
 ### PROGRAM
 ```py
 import pandas as pd
