@@ -1,6 +1,6 @@
 ### Developed by: Safeeq Fazil A
 ### Reg no: 212222240086
-### Date: 
+### Date: 28.09.2024
 # Ex.No: 07                                       AUTO REGRESSIVE MODEL
 
 
